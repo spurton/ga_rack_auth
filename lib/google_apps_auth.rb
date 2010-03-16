@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'rack/openid'
+require 'lib/gapps_openid'
 
 module IndieLogin
   class GoogleAppsAuth < Sinatra::Base
@@ -18,7 +19,7 @@ module IndieLogin
         )
         throw(:halt, [401, 'Not Authorized'])
       end
-
     end
+    
   end # GoogleAppsAuth
 end # IndieLogin
