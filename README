@@ -1,0 +1,8 @@
+A simple middleware add-on that gives you the ability to login to your app via google apps
+This middleware will require being logged into google apps for all pages
+
+Use:
+Start your Rack app with the example config.ru
+Or in Rails: 
+# config/environment.rb
+config.middleware.use "IndieLogin::GoogleAppsAuth"
